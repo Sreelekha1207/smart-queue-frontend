@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Smart Queue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Smart Queue Management</h1>
+        <p>Book your token quickly and avoid waiting!</p>
+    </header>
+
+    <main>
+        <section class="booking">
+            <h2>Book Your Token</h2>
+            <form id="tokenForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+
+                <label for="state">State:</label>
+                <input type="text" id="state" required placeholder="Enter your state">
+
+                <label for="hospital">Hospital Name:</label>
+                <input type="text" id="hospital" required placeholder="Enter hospital name">
+
+                <label for="doctor">Doctor Name:</label>
+                <input type="text" id="doctor" required placeholder="Enter doctor name">
+
+                <label for="tokenType">Token Type:</label>
+                <select id="tokenType">
+                    <option value="General">General</option>
+                    <option value="Emergency">Emergency</option>
+                </select>
+
+                <button type="submit">Book Token</button>
+            </form>
+            <p id="confirmation"></p>
+        </section>
+
+        <section class="view-queue">
+            <a href="queue.html">View Current Queue</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
